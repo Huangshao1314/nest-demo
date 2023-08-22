@@ -16,13 +16,13 @@ export class TasksService {
     });
   }
 
-  async createTask(data: { title: string; description?: string; done?: boolean }): Promise<Task> {
+  async createTask(data: { lotteryDrawResult: string; lotteryDrawTime?: string; lotteryGameNum?: string }): Promise<Task> {
     return this.prisma.task.create({
       data,
     });
   }
 
-  async updateTask(id: number, data: { title?: string; description?: string; done?: boolean }): Promise<Task | null> {
+  async updateTask(id: number, data:{ lotteryDrawResult: string; lotteryDrawTime?: string; lotteryGameNum?: string }): Promise<Task | null> {
     return this.prisma.task.update({
       where: { id },
       data,

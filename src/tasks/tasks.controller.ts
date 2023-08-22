@@ -18,7 +18,6 @@ export class TasksController {
 
   @Post()
   async createTask(@Body() task: Task): Promise<Task> {
-    console.log('task: ', task);
     return this.tasksService.createTask(task);
   }
 

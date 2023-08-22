@@ -2,9 +2,11 @@
 -- CreateTable
 CREATE TABLE "Task" (
     "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
-    "title" TEXT NOT NULL,
-    "description" TEXT,
-    "done" BOOLEAN NOT NULL DEFAULT false
+    "lotteryDrawResult" TEXT NOT NULL,
+    "lotteryDrawTime" TEXT,
+    "lotteryGameNum" TEXT
 );
+
+-- DROP TABLE "Task"
 
 SELECT * FROM 'Task'
