@@ -12,6 +12,14 @@ model Task {
   lotteryGameNum String?
 }
 
+model Project {
+  id          Int      @id @default(autoincrement())
+  red       String
+  blue String?
+  date String?
+}
+
+
 // 添加生成器配置
 generator client {
   provider = "prisma-client-js"

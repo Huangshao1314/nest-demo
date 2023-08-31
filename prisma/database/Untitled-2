@@ -1,0 +1,14 @@
+-- database: /Users/xyz/Desktop/workspace/nest-demo/prisma/database/master-database.db
+
+-- 要运行整个文件，请按窗口右上角的▷按钮。
+
+SELECT * FROM "Project";
+
+DROP TABLE "Project";
+
+CREATE TABLE "Project" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "red" TEXT NOT NULL,
+    "blue" TEXT,
+    "date" TEXT
+);
