@@ -7,13 +7,26 @@ import { TasksService } from './tasks/tasks.service';
 import { ProjectsModule } from './project/project.module';
 import { ProjectsController } from './Project/project.controller';
 import { ProjectsService } from './Project/project.service';
+import { MeasuresController } from './measure/measure.controller';
+import { MeasuresService } from './measure/measure.service';
 import { PrismaService } from './prisma/prisma.service';
 import { JwtAuthModule } from './auth/jwt-auth.module';
 import { AuthController } from './auth/auth.controller';
 
 @Module({
   imports: [],
-  controllers: [AppController, TasksController, ProjectsController],
-  providers: [AppService, TasksService, ProjectsService, PrismaService],
+  controllers: [
+    AppController,
+    TasksController,
+    ProjectsController,
+    MeasuresController,
+  ],
+  providers: [
+    AppService,
+    TasksService,
+    ProjectsService,
+    MeasuresService,
+    PrismaService,
+  ],
 })
 export class AppModule {}

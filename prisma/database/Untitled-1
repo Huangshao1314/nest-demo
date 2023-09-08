@@ -2,8 +2,8 @@
 
 -- 要运行整个文件，请按窗口右上角的▷按钮。
 
-SELECT * FROM "Task";
+SELECT * FROM "Measure";
 
 --- DELETE  from "Task" WHERE id= 0 || id=1;
 
-DROP TABLE "Project"
+-- DROP TABLE "Project"

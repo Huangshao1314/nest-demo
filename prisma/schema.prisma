@@ -19,6 +19,20 @@ model Project {
   date String?
 }
 
+model Measure {
+  id          Int      @id @default(autoincrement())
+  same1       String
+  same2 String?
+  same3 String?
+  same4 String?
+  same5 String?
+  same6 String?
+  same7 String?
+  same8 String?
+  same9 String?
+  same10 String?
+}
+
 
 // 添加生成器配置
 generator client {
