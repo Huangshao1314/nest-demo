@@ -1,14 +1,17 @@
--- database: /Users/xyz/Desktop/workspace/nest-demo/prisma/database/master-database.db
+-- database: c:\Users\mhsf1\Desktop\code\workspace\nest-demo\prisma\database\master-database.db
+
 
 -- 要运行整个文件，请按窗口右上角的▷按钮。
 
-SELECT * FROM "Project";
+SELECT * FROM "Rank_Five";
 
-DROP TABLE "Project";
+DROP TABLE "Rank_Five";
 
-CREATE TABLE "Project" (
+CREATE TABLE "Rank_Five" (
     "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
-    "red" TEXT NOT NULL,
-    "blue" TEXT,
-    "date" TEXT
+    "lotteryGameNum" TEXT NOT NULL,
+    "lotteryDrawResult" TEXT,
+    "lotteryDrawTime" TEXT,
+    "lotteryGameName" TEXT,
+    "lotteryDrawNum" TEXT
 );

@@ -2,7 +2,8 @@ const fs = require('fs');
 
 // 读取本地 JSON 文件的路径
 const inputJsonFilePath =
-  '/Users/xyz/Desktop/workspace/nest-demo/prisma/database/test3000.json';
+  'C:\\Users\\mhsf1\\Desktop\\code\\workspace\\nest-demo\\prisma\\database\\out.json';
+// '/Users/xyz/Desktop/workspace/nest-demo/prisma/database/out.json';
 
 // 读取 JSON 文件
 fs.readFile(inputJsonFilePath, 'utf8', (err, data) => {
@@ -20,9 +21,12 @@ fs.readFile(inputJsonFilePath, 'utf8', (err, data) => {
     // 例如，删除 "ttets" 列
     for (let i = 0; i < jsonData.length; i++) {
       jsonFrom.push({
-        blue: jsonData[i].blue,
-        red: jsonData[i].red,
-        date: jsonData[i].date,
+        lotteryGameName: jsonData[i].lotteryGameName,
+        lotteryGameNum: jsonData[i].lotteryGameNum,
+        lotteryDrawResult: jsonData[i].lotteryDrawResult,
+        lotteryDrawTime: jsonData[i].lotteryDrawTime,
+        lotteryDrawNum: jsonData[i].lotteryDrawNum,
+        id: i,
       });
     }
 

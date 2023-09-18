@@ -33,6 +33,15 @@ model Measure {
   same10 String?
 }
 
+model Rank_Five {
+  id          Int      @id @default(autoincrement())
+  lotteryGameName       String
+  lotteryGameNum       String
+  lotteryDrawResult String
+  lotteryDrawTime String
+  lotteryDrawNum String
+}
+
 
 // 添加生成器配置
 generator client {
